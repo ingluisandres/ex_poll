@@ -31,4 +31,18 @@ defmodule ExPoll.PollsFixtures do
 
     option
   end
+
+  @doc """
+  Generate a vote.
+  """
+  def vote_fixture(attrs \\ %{}) do
+    {:ok, vote} =
+      attrs
+      |> Enum.into(%{
+
+      })
+      |> ExPoll.Polls.create_vote()
+
+    vote
+  end
 end
