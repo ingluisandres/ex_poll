@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :ex_poll, ExPoll.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "userroot",
+  password: "somepassword",
   hostname: "localhost",
   database: "ex_poll_dev",
   stacktrace: true,
