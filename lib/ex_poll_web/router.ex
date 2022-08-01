@@ -10,6 +10,7 @@ defmodule ExPollWeb.Router do
     resources "/polls", PollController, except: [:new, :edit] do
       resources "/options", OptionController, except: [:new, :edit]
     end
+    
   end
 
   # Enables LiveDashboard only for development
